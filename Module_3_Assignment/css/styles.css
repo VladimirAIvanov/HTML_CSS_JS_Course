@@ -1,0 +1,95 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}
+
+section {
+    border: 1px solid black;
+    background-color: grey;
+    width: 90%;
+    height: 1000px;
+    margin: auto;
+    font-family: Helvetica;
+    color: white;
+}
+
+p {
+    clear: both;
+    padding: 1%;
+}
+
+h2 {
+    text-align: center;
+    text-decoration-line: all;
+    color: green;
+    padding: 1% 10%;
+    margin-top: auto;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+/** HEADER **/
+
+#header-nav {
+    border: black 1px;
+    background-color: #C0C0C0;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    /*course name */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.20;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #666;
+    background-color: #888;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent; /* Removes border color */
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f00; /* Changes regular toggle color */
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #f00; /* Changes toggle color on hover */
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-nav li:hover{
+  background-color: green;
+}
+
+/**Media**/
+@media(max-width: 767px){
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    line-height: 0.8;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand {
+    padding-top: 5px;
+}
+}
